@@ -1972,7 +1972,7 @@
   const NAMES = { A: 'eɪ', B: 'biː', C: 'siː', D: 'diː', E: 'iː', F: 'ef', G: 'dʒiː', H: 'eɪtʃ', I: 'aɪ', J: 'dʒeɪ', K: 'keɪ', L: 'el', M: 'em', N: 'en', O: 'əʊ', P: 'piː', Q: 'kjuː', R: 'ɑː', S: 'es', T: 'tiː', U: 'juː', V: 'viː', W: 'ˈdʌbljuː', X: 'eks', Y: 'waɪ', Z: 'zed' };
   const sIn = $('#spell-in'), sOut = $('#spell-out'), sSay = $('#spell-say');
   if (sIn && sOut) {
-    const strip = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D');
+    const strip = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\u0111/g, 'd').replace(/\u0110/g, 'D');
     const render = () => {
       const words = strip(sIn.value).toUpperCase().split(/\s+/).filter(Boolean);
       sOut.innerHTML = words.map(w => Array.from(w).filter(c => NAMES[c]).map(c => `<span class="letter"><b>${c}</b><i class="ipa">/${NAMES[c]}/</i></span>`).join('')).join('<span style="width:14px"></span>');
