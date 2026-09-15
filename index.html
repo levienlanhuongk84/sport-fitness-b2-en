@@ -147,7 +147,9 @@
   .flow .step li { margin-block: .15em; }
 
   .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
-  .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .grid-3 { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .grid-3 { grid-template-columns: 1fr; } }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; }
   .card h4 { margin-bottom: 6px; }
   .card .eyebrow { display: block; margin-bottom: 6px; }
@@ -575,11 +577,11 @@
   <section class="block">
     <h3 id="r-method">How to study a vocabulary group</h3>
     <div class="flow flow5">
-      <div class="step"><span class="k">1</span><h4>Read the Core tier aloud</h4><ul><li>You already know these words — check your pronunciation and word stress.</li></ul></div>
-      <div class="step"><span class="k">2</span><h4>Choose 5 Advanced phrases</h4><ul><li>Don't learn them all. Choose the phrases you will use when talking about yourself.</li></ul></div>
-      <div class="step"><span class="k">3</span><h4>Cover the meaning column</h4><ul><li>Look at the English phrase → say the meaning; look at the meaning → say the phrase.</li></ul></div>
-      <div class="step"><span class="k">4</span><h4>Write one sentence about yourself</h4><ul><li>A true sentence about you / your hospital / your patients, using 2 of the phrases you have just learnt.</li></ul></div>
-      <div class="step"><span class="k">5</span><h4>Speak for 30 seconds</h4><ul><li>Start the timer, say that sentence + 2 more. Record it, then listen back.</li></ul></div>
+      <div class="step"><span class="k">1</span><h4>Read the Core tier aloud</h4><ul><li>You already know these words</li><li>Check your pronunciation and word stress</li></ul></div>
+      <div class="step"><span class="k">2</span><h4>Choose 5 Advanced phrases</h4><ul><li>Don't learn them all</li><li>Choose the phrases you will use when talking about yourself</li></ul></div>
+      <div class="step"><span class="k">3</span><h4>Cover the meaning column</h4><ul><li>Look at the English phrase → say the meaning</li><li>Look at the meaning → say the phrase</li></ul></div>
+      <div class="step"><span class="k">4</span><h4>Write one sentence about yourself</h4><ul><li>A true sentence about you / your hospital / your patients</li><li>Use 2 of the phrases you have just learnt</li></ul></div>
+      <div class="step"><span class="k">5</span><h4>Speak for 30 seconds</h4><ul><li>Start the timer, say that sentence + 2 more</li><li>Record it</li><li>Listen back</li></ul></div>
     </div>
   </section>
 </article>
