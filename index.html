@@ -386,6 +386,13 @@
   .rule-card p { margin: 5px 0 3px; font-size: .87em; color: var(--ink-2); line-height: 1.35; }
   .rule-card i { font-size: .85em; color: var(--ink); }
   @media (max-width: 640px) { .rule-cards { grid-template-columns: 1fr; } }
+  .lead-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 12px 0; }
+  .lead-card { background: var(--surface-2); border-radius: 12px; padding: 14px 16px; }
+  .lead-card .ic { display: block; font-size: 2em; line-height: 1; margin-bottom: 8px; }
+  .lead-card b { display: block; font-family: var(--font-cond); font-size: .98em; color: var(--purple-ink); line-height: 1.3; }
+  .lead-card .ask { margin-top: 9px; padding-top: 9px; border-top: 1px dashed var(--line-strong); font-size: .9em; font-style: italic; color: var(--ink); }
+  @media (max-width: 900px) { .lead-cards { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .lead-cards { grid-template-columns: 1fr; } }
   .use { background: linear-gradient(90deg, var(--gold-soft), var(--surface)); border-left: 4px solid var(--gold); padding: 10px 14px; border-radius: 0 10px 10px 0; margin-top: 10px; }
   .use b { font-family: var(--font-cond); text-transform: uppercase; letter-spacing: .06em; font-size: .78em; color: var(--orange-ink); margin-right: 8px; }
   .group-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-bottom: 10px; }
@@ -450,11 +457,33 @@
 </aside>
 
 <main>
-<!-- ================= SHEET 1: ROADMAP ================= -->
+<!-- ================= SHEET 1: LEAD-IN ================= -->
+<article class="sheet" id="leadin" role="tabpanel" data-title="Lead-in">
+  <div class="sheet-head">
+    <div>
+      <span class="eyebrow">Sheet 1 / 8 · Lead-in · Before you start</span>
+      <h2>Have you seen these patients before?</h2>
+    </div>
+  </div>
+
+  <section class="block">
+    <div class="timer"><span class="tdisp">3:00</span><button class="btn sm" type="button" data-sec="180">Pair discussion 3'</button><button class="btn sm stop tstop" type="button">⏹</button><span style="color:var(--muted);font-size:.9em">Look at the 6 situations and answer the question under each one.</span></div>
+    <div class="lead-cards">
+      <div class="lead-card"><span class="ic">🪑🤕</span><b>An office worker with back pain from sitting all day</b><div class="ask">"What would you ask this patient first?"</div></div>
+      <div class="lead-card"><span class="ic">🏃‍♂️🦵</span><b>A runner with knee pain after training</b><div class="ask">"What advice would you give about their training?"</div></div>
+      <div class="lead-card"><span class="ic">🧓🦯</span><b>An elderly patient with stiff joints and low mobility</b><div class="ask">"What kind of physical activity is safe for them?"</div></div>
+      <div class="lead-card"><span class="ic">⚖️🍔</span><b>An overweight patient at risk of diabetes and heart disease</b><div class="ask">"How would you explain the benefits of exercise?"</div></div>
+      <div class="lead-card"><span class="ic">🌙🩺</span><b>A doctor or nurse on night shifts with no time to exercise</b><div class="ask">"What would you say about your own exercise routine?"</div></div>
+      <div class="lead-card"><span class="ic">📋💊</span><b>A doctor prescribing exercise instead of just medicine</b><div class="ask">"How do you usually recommend exercise to a patient?"</div></div>
+    </div>
+    <div class="note info"><span class="tag">Bridge</span><p>Pain, movement, advice — that's exactly the language you'll build up to B2 level through the next 10 vocabulary groups on Sport &amp; Fitness.</p></div>
+  </section>
+</article>
+<!-- ================= SHEET 2: ROADMAP ================= -->
 <article class="sheet" id="route" role="tabpanel" data-title="Roadmap">
   <div class="sheet-head">
     <div>
-      <span class="eyebrow">Sheet 1 / 7 · Sport · free time · fitness</span>
+      <span class="eyebrow">Sheet 2 / 8 · Sport · free time · fitness</span>
     </div>
   </div>
 
@@ -466,19 +495,19 @@
       <div class="card"><span class="eyebrow">Speaking · Part 3</span><p>Defend your view on a social issue (compulsory PE, athletes' pay, health policy) with 2 reasons + 1 counter-argument.</p></div>
       <div class="card"><span class="eyebrow">Writing · Task 1</span><p>An email of 120–150 words covering all 3 points, using the language of advice, with 5+ topic collocations.</p></div>
       <div class="card"><span class="eyebrow">Writing · Task 2</span><p>A cause–solution essay of ≥ 250 words, 4 paragraphs, clear topic sentences, 8+ topic collocations and one concession sentence.</p></div>
-      <div class="card"><span class="eyebrow">Vocabulary</span><p>Actively use ≥ 60 phrases from the 10 groups; recall them after 7 days (Sheet 7 quiz).</p></div>
+      <div class="card"><span class="eyebrow">Vocabulary</span><p>Actively use ≥ 60 phrases from the 10 groups; recall them after 7 days (Sheet 8 quiz).</p></div>
     </div>
   </section>
 
   <section class="block">
     <h3 id="r-vstep">What to remember</h3>
     <div class="grid-3">
-      <div class="card"><span class="eyebrow">Speaking Part 1 · social interaction</span><p>Habits, frequency, preferences, short reasons.</p><div class="chips" style="margin-top:8px"><span class="chip p">Group 1 sport types</span><span class="chip p">Group 2 verbs</span><span class="chip p">Group 7 frequency</span><span class="chip p">Group 8 attitudes</span><span class="chip o">→ Sheet 4</span></div></div>
-      <div class="card"><span class="eyebrow">Speaking Part 2 · developing a topic from a cue map</span><p>Describe a sport / a habit; benefits; a memory; evaluation.</p><div class="chips" style="margin-top:8px"><span class="chip p">Group 2</span><span class="chip p">Group 4</span><span class="chip p">Group 5 benefits</span><span class="chip p">Group 8</span><span class="chip p">Group 9 achievement</span><span class="chip o">→ Sheet 4</span></div></div>
-      <div class="card"><span class="eyebrow">Speaking Part 3 · extended discussion</span><p>Cause – effect, comparison, concession, suggestions.</p><div class="chips" style="margin-top:8px"><span class="chip p">Group 5</span><span class="chip p">Group 6 drawbacks</span><span class="chip p">Group 10 society &amp; policy</span><span class="chip p">chunks Sheet 3</span></div></div>
-      <div class="card"><span class="eyebrow">Writing Task 1 · email</span><p>Advise a friend on which sport to choose, explain the benefits, show how to get started.</p><div class="chips" style="margin-top:8px"><span class="chip p">Group 2</span><span class="chip p">Group 5</span><span class="chip p">Group 7</span><span class="chip p">language of suggestion</span><span class="chip o">→ Sheet 5</span></div></div>
-      <div class="card"><span class="eyebrow">Writing Task 2 · essay</span><p>Why people exercise less; solutions from the government – employers – the health sector.</p><div class="chips" style="margin-top:8px"><span class="chip p">Group 5</span><span class="chip p">Group 6</span><span class="chip p">Group 10</span><span class="chip p">cause/solution chunks</span><span class="chip o">→ Sheet 5</span></div></div>
-      <div class="card"><span class="eyebrow">Reading · Listening</span><p>Recognise paraphrases of the same phrase (<i>reduce the risk</i> = <i>lower the chance…</i>).</p><div class="chips" style="margin-top:8px"><span class="chip p">the "Meaning / synonym" column in each group</span><span class="chip p">Exercise 7 Sheet 6</span></div></div>
+      <div class="card"><span class="eyebrow">Speaking Part 1 · social interaction</span><p>Habits, frequency, preferences, short reasons.</p><div class="chips" style="margin-top:8px"><span class="chip p">Group 1 sport types</span><span class="chip p">Group 2 verbs</span><span class="chip p">Group 7 frequency</span><span class="chip p">Group 8 attitudes</span><span class="chip o">→ Sheet 5</span></div></div>
+      <div class="card"><span class="eyebrow">Speaking Part 2 · developing a topic from a cue map</span><p>Describe a sport / a habit; benefits; a memory; evaluation.</p><div class="chips" style="margin-top:8px"><span class="chip p">Group 2</span><span class="chip p">Group 4</span><span class="chip p">Group 5 benefits</span><span class="chip p">Group 8</span><span class="chip p">Group 9 achievement</span><span class="chip o">→ Sheet 5</span></div></div>
+      <div class="card"><span class="eyebrow">Speaking Part 3 · extended discussion</span><p>Cause – effect, comparison, concession, suggestions.</p><div class="chips" style="margin-top:8px"><span class="chip p">Group 5</span><span class="chip p">Group 6 drawbacks</span><span class="chip p">Group 10 society &amp; policy</span><span class="chip p">chunks Sheet 4</span></div></div>
+      <div class="card"><span class="eyebrow">Writing Task 1 · email</span><p>Advise a friend on which sport to choose, explain the benefits, show how to get started.</p><div class="chips" style="margin-top:8px"><span class="chip p">Group 2</span><span class="chip p">Group 5</span><span class="chip p">Group 7</span><span class="chip p">language of suggestion</span><span class="chip o">→ Sheet 6</span></div></div>
+      <div class="card"><span class="eyebrow">Writing Task 2 · essay</span><p>Why people exercise less; solutions from the government – employers – the health sector.</p><div class="chips" style="margin-top:8px"><span class="chip p">Group 5</span><span class="chip p">Group 6</span><span class="chip p">Group 10</span><span class="chip p">cause/solution chunks</span><span class="chip o">→ Sheet 6</span></div></div>
+      <div class="card"><span class="eyebrow">Reading · Listening</span><p>Recognise paraphrases of the same phrase (<i>reduce the risk</i> = <i>lower the chance…</i>).</p><div class="chips" style="margin-top:8px"><span class="chip p">the "Meaning / synonym" column in each group</span><span class="chip p">Exercise 7 Sheet 7</span></div></div>
     </div>
   </section>
 
@@ -489,16 +518,16 @@
         <div class="tablewrap" style="border:0"><table>
           <tbody>
             <tr><td class="t" style="width:14%">15'</td><td><ul class="substeps"><li>Brainstorm a "sport" mind map in pairs</li><li>Compare it with the 10 groups</li><li>Pick your 3 weakest groups</li></ul></td></tr>
-            <tr><td class="t">60'</td><td><ul class="substeps"><li>Group 1–Group 5: read the Core → Advanced → Collocations tiers</li><li>Write 1 sentence about yourself for each group</li><li>Exercises 1–4 Sheet 6</li></ul></td></tr>
-            <tr><td class="t">30'</td><td><ul class="substeps"><li>Sheet 3: functional chunks + the B1 → B2 upgrade table</li><li>Exercise 5 (upgrade the sentence)</li></ul></td></tr>
+            <tr><td class="t">60'</td><td><ul class="substeps"><li>Group 1–Group 5: read the Core → Advanced → Collocations tiers</li><li>Write 1 sentence about yourself for each group</li><li>Exercises 1–4 Sheet 7</li></ul></td></tr>
+            <tr><td class="t">30'</td><td><ul class="substeps"><li>Sheet 4: functional chunks + the B1 → B2 upgrade table</li><li>Exercise 5 (upgrade the sentence)</li></ul></td></tr>
             <tr><td class="t">60'</td><td><ul class="substeps"><li>Speaking Part 1 in pairs (timer: 30" per answer)</li><li>Part 2: speak for 2' from the cue map, record yourself, self-assess with the checklist</li></ul></td></tr>
-            <tr><td class="t">15'</td><td><ul class="substeps"><li>Retrieval quiz, 12 phrases (Sheet 7)</li><li>Write 5 phrases in your own notebook</li></ul></td></tr>
+            <tr><td class="t">15'</td><td><ul class="substeps"><li>Retrieval quiz, 12 phrases (Sheet 8)</li><li>Write 5 phrases in your own notebook</li></ul></td></tr>
           </tbody></table></div></div>
       <div class="card"><span class="eyebrow">Session 2 · 4 periods · writing outcome</span>
         <div class="tablewrap" style="border:0"><table>
           <tbody>
             <tr><td class="t" style="width:14%">10'</td><td>Recall Group 1–Group 5 without looking at the book (one partner asks, the other answers).</td></tr>
-            <tr><td class="t">50'</td><td><ul class="substeps"><li>Group 6–Group 10 (drawbacks, frequency, attitudes, achievement, policy)</li><li>Exercises 6–9 Sheet 6</li></ul></td></tr>
+            <tr><td class="t">50'</td><td><ul class="substeps"><li>Group 6–Group 10 (drawbacks, frequency, attitudes, achievement, policy)</li><li>Exercises 6–9 Sheet 7</li></ul></td></tr>
             <tr><td class="t">40'</td><td>Speaking Part 3: debate 3 questions in groups of three, using the Point – Why – Example – Counter – Evaluation frame.</td></tr>
             <tr><td class="t">30' + 40'</td><td><ul class="substeps"><li>Task 1: write a 120–150-word email from the planner → swap with a partner and mark with the checklist</li><li>Task 2: make an outline + write 2 body paragraphs; finish at home</li></ul></td></tr>
             <tr><td class="t">10'</td><td><ul class="substeps"><li>Mastery checklist</li><li>1‑3‑7 day review schedule</li></ul></td></tr>
@@ -517,11 +546,11 @@
     </div>
   </section>
 </article>
-<!-- ================= SHEET 2: VOCABULARY BY GROUP ================= -->
+<!-- ================= SHEET 3: VOCABULARY BY GROUP ================= -->
 <article class="sheet" id="vocab" role="tabpanel" data-title="Vocabulary by group" hidden>
   <div class="sheet-head">
     <div>
-      <span class="eyebrow">Sheet 2 / 7 · 10 vocabulary groups · Sport &amp; Fitness</span>
+      <span class="eyebrow">Sheet 3 / 8 · 10 vocabulary groups · Sport &amp; Fitness</span>
       <h2>Sport &amp; Fitness vocabulary</h2>
     </div>
   </div>
@@ -1061,11 +1090,11 @@
     </div>
   </section>
 </article>
-<!-- ================= SHEET 3: CHUNKS & SENTENCE FRAMES ================= -->
+<!-- ================= SHEET 4: CHUNKS & SENTENCE FRAMES ================= -->
 <article class="sheet" id="chunks" role="tabpanel" data-title="Chunks &amp; sentence frames" hidden>
   <div class="sheet-head">
     <div>
-      <span class="eyebrow">Sheet 3 / 7 · Functional language</span>
+      <span class="eyebrow">Sheet 4 / 8 · Functional language</span>
       <h2>Chunks that link ideas</h2>
     </div>
   </div>
@@ -1141,11 +1170,11 @@
     </table></div>
   </section>
 </article>
-<!-- ================= SHEET 4: SPEAKING ================= -->
+<!-- ================= SHEET 5: SPEAKING ================= -->
 <article class="sheet" id="speaking" role="tabpanel" data-title="Speaking P1–P3" hidden>
   <div class="sheet-head">
     <div>
-      <span class="eyebrow">Sheet 4 / 7 · VSTEP Speaking</span>
+      <span class="eyebrow">Sheet 5 / 8 · VSTEP Speaking</span>
       <h2>Speaking</h2>
     </div>
   </div>
@@ -1287,11 +1316,11 @@
     </div>
   </section>
 </article>
-<!-- ================= SHEET 5: WRITING ================= -->
+<!-- ================= SHEET 6: WRITING ================= -->
 <article class="sheet" id="writing" role="tabpanel" data-title="Writing T1–T2" hidden>
   <div class="sheet-head">
     <div>
-      <span class="eyebrow">Sheet 5 / 7 · VSTEP Writing</span>
+      <span class="eyebrow">Sheet 6 / 8 · VSTEP Writing</span>
       <h2>Writing</h2>
     </div>
   </div>
@@ -1388,11 +1417,11 @@
     </div>
   </section>
 </article>
-<!-- ================= SHEET 6: ACTIVE PRACTICE ================= -->
+<!-- ================= SHEET 7: ACTIVE PRACTICE ================= -->
 <article class="sheet" id="practice" role="tabpanel" data-title="Active practice" hidden>
   <div class="sheet-head">
     <div>
-      <span class="eyebrow">Sheet 6 / 7</span>
+      <span class="eyebrow">Sheet 7 / 8</span>
       <h2>Practice — 9 interactive exercises</h2>
     </div>
     <div class="prog" data-prog>0 exercises checked</div>
@@ -1456,7 +1485,7 @@
   </section>
 
   <section class="block">
-    <h3 id="x-5">Exercise 5 · Upgrade B1 → B2 — choose the most natural sentence (Sheet 3)</h3>
+    <h3 id="x-5">Exercise 5 · Upgrade B1 → B2 — choose the most natural sentence (Sheet 4)</h3>
     <div class="ex" id="b2-x5">
       <div class="ex-head"><span class="ex-no">Exercise 5</span><h4>Which sentence is the correct, natural upgrade?</h4><span class="ex-type">MCQ</span><span class="score" data-score></span></div>
       <div class="ex-body">
@@ -1559,11 +1588,11 @@
   </section>
 </article>
 
-<!-- ================= SHEET 7: REVIEW & CHECKLIST ================= -->
+<!-- ================= SHEET 8: REVIEW & CHECKLIST ================= -->
 <article class="sheet" id="review" role="tabpanel" data-title="Review &amp; checklist" hidden>
   <div class="sheet-head">
     <div>
-      <span class="eyebrow">Sheet 7 / 7 · 1‑3‑7 review schedule · My notebook · Mastery</span>
+      <span class="eyebrow">Sheet 8 / 8 · 1‑3‑7 review schedule · My notebook · Mastery</span>
       <h2>Recall it — book closed</h2>
     </div>
     <div class="prog" data-prog>0 exercises checked</div>
@@ -1645,7 +1674,7 @@
   /* ---------- rail / sheets ---------- */
   const sheets = $$('.sheet');
   const nav = $('#rail-nav');
-  const groups = { 0: 'Start', 1: 'Knowledge', 3: 'VSTEP output', 5: 'Practice & review' };
+  const groups = { 0: 'Start', 2: 'Knowledge', 4: 'VSTEP output', 6: 'Practice & review' };
   sheets.forEach((s, i) => {
     if (groups[i] !== undefined) { const g = document.createElement('div'); g.className = 'rail-group'; g.textContent = groups[i]; nav.appendChild(g); }
     const item = document.createElement('div'); item.className = 'rail-item';
