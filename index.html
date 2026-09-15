@@ -387,12 +387,16 @@
   .rule-card i { font-size: .85em; color: var(--ink); }
   @media (max-width: 640px) { .rule-cards { grid-template-columns: 1fr; } }
   .lead-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 12px 0; }
-  .lead-card { background: var(--surface-2); border-radius: 12px; padding: 14px 16px; }
-  .lead-card .ic { display: block; font-size: 2em; line-height: 1; margin-bottom: 8px; }
+  .lead-card { background: var(--surface-2); border-radius: 12px; overflow: hidden; }
+  .lead-card .li-photo { display: block; width: 100%; height: 150px; object-fit: cover; background: var(--surface-3); }
+  .lead-card .li-body { padding: 14px 16px; }
   .lead-card b { display: block; font-family: var(--font-cond); font-size: .98em; color: var(--purple-ink); line-height: 1.3; }
   .lead-card .ask { margin-top: 9px; padding-top: 9px; border-top: 1px dashed var(--line-strong); font-size: .9em; font-style: italic; color: var(--ink); }
   @media (max-width: 900px) { .lead-cards { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 560px) { .lead-cards { grid-template-columns: 1fr; } }
+  .li-hint { margin-top: 9px; font-size: .85em; }
+  .li-hint summary { cursor: pointer; color: var(--orange-ink); font-weight: 700; font-family: var(--font-cond); letter-spacing: .02em; }
+  .li-hint p { margin: 6px 0 0; color: var(--ink-2); line-height: 1.45; }
   .li-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 12px 0; }
   .li-card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; }
   .li-card .li-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
@@ -486,31 +490,31 @@
     <h3 id="li-a1">Activity 1 · Have you seen these patients before?</h3>
     <div class="timer"><span class="tdisp">3:00</span><button class="btn sm" type="button" data-sec="180">Pair discussion 3'</button><button class="btn sm stop tstop" type="button">⏹</button><span style="color:var(--muted);font-size:.9em">Look at the 6 situations and answer the question under each one.</span></div>
     <div class="lead-cards">
-      <div class="lead-card"><span class="ic">🪑🤕</span><b>An office worker with back pain from sitting all day</b><div class="ask">"What would you ask this patient first?"</div></div>
-      <div class="lead-card"><span class="ic">🏃‍♂️🦵</span><b>A runner with knee pain after training</b><div class="ask">"What advice would you give about their training?"</div></div>
-      <div class="lead-card"><span class="ic">🧓🦯</span><b>An elderly patient with stiff joints and low mobility</b><div class="ask">"What kind of physical activity is safe for them?"</div></div>
-      <div class="lead-card"><span class="ic">⚖️🍔</span><b>An overweight patient at risk of diabetes and heart disease</b><div class="ask">"How would you explain the benefits of exercise?"</div></div>
-      <div class="lead-card"><span class="ic">🌙🩺</span><b>A doctor or nurse on night shifts with no time to exercise</b><div class="ask">"What would you say about your own exercise routine?"</div></div>
-      <div class="lead-card"><span class="ic">📋💊</span><b>A doctor prescribing exercise instead of just medicine</b><div class="ask">"How do you usually recommend exercise to a patient?"</div></div>
+      <div class="lead-card"><img class="li-photo" src="img/leadin-1.jpg" alt="An office worker with back pain from sitting all day" loading="lazy"><div class="li-body"><b>An office worker with back pain from sitting all day</b><div class="ask">"What would you ask this patient first?"</div></div></div>
+      <div class="lead-card"><img class="li-photo" src="img/leadin-2.jpg" alt="A runner with knee pain after training" loading="lazy"><div class="li-body"><b>A runner with knee pain after training</b><div class="ask">"What advice would you give about their training?"</div></div></div>
+      <div class="lead-card"><img class="li-photo" src="img/leadin-3.jpg" alt="An elderly patient with stiff joints and low mobility" loading="lazy"><div class="li-body"><b>An elderly patient with stiff joints and low mobility</b><div class="ask">"What kind of physical activity is safe for them?"</div></div></div>
+      <div class="lead-card"><img class="li-photo" src="img/leadin-4.jpg" alt="An overweight patient at risk of diabetes and heart disease" loading="lazy"><div class="li-body"><b>An overweight patient at risk of diabetes and heart disease</b><div class="ask">"How would you explain the benefits of exercise?"</div></div></div>
+      <div class="lead-card"><img class="li-photo" src="img/leadin-5.jpg" alt="A doctor or nurse on night shifts with no time to exercise" loading="lazy"><div class="li-body"><b>A doctor or nurse on night shifts with no time to exercise</b><div class="ask">"What would you say about your own exercise routine?"</div></div></div>
+      <div class="lead-card"><img class="li-photo" src="img/leadin-6.jpg" alt="A doctor prescribing exercise instead of just medicine" loading="lazy"><div class="li-body"><b>A doctor prescribing exercise instead of just medicine</b><div class="ask">"How do you usually recommend exercise to a patient?"</div></div></div>
     </div>
     <div class="note info"><span class="tag">Bridge</span><p>Pain, movement, advice — you've just used the language of this topic. Activity 2 shows how many words you already have for the 10 groups ahead.</p></div>
   </section>
   <section class="block">
     <h3 id="li-a2">Activity 2 · How many words do you already have for the 10 groups?</h3>
-    <div class="timer"><span class="tdisp">5:00</span><button class="btn sm" type="button" data-sec="300">Brainstorm 5'</button><button class="btn sm stop tstop" type="button">⏹</button><span style="color:var(--muted);font-size:.9em">For each group, type every English word or phrase that comes to mind (separated by commas). Tick your <b>3 weakest groups</b> — study those first.</span></div>
+    <div class="timer"><span class="tdisp">5:00</span><button class="btn sm" type="button" data-sec="300">Brainstorm 5'</button><button class="btn sm stop tstop" type="button">⏹</button><span style="color:var(--muted);font-size:.9em">For each group, type every English word or phrase that comes to mind (separated by commas).</span></div>
     <div class="li-grid">
-      <div class="li-card"><div class="li-top"><span class="chip p">Group 1</span><a class="li-go" href="#g1" data-go="g1">Open group →</a></div><b>Types of sport &amp; activity</b><p class="ask">What sports do you play, do or go?</p><input class="ans" id="li-g1" placeholder="word 1, word 2, …" aria-label="Group 1"><div class="li-foot"><span class="li-n">0</span><label><input type="checkbox" id="li-w1"> my weak group</label></div></div>
-      <div class="li-card"><div class="li-top"><span class="chip p">Group 2</span><a class="li-go" href="#g2" data-go="g2">Open group →</a></div><b>Verbs &amp; phrasal verbs for training</b><p class="ask">What do you actually do in a training session?</p><input class="ans" id="li-g2" placeholder="word 1, word 2, …" aria-label="Group 2"><div class="li-foot"><span class="li-n">0</span><label><input type="checkbox" id="li-w2"> my weak group</label></div></div>
-      <div class="li-card"><div class="li-top"><span class="chip p">Group 3</span><a class="li-go" href="#g3" data-go="g3">Open group →</a></div><b>People &amp; roles</b><p class="ask">Who is involved in a sport, on and off the pitch?</p><input class="ans" id="li-g3" placeholder="word 1, word 2, …" aria-label="Group 3"><div class="li-foot"><span class="li-n">0</span><label><input type="checkbox" id="li-w3"> my weak group</label></div></div>
-      <div class="li-card"><div class="li-top"><span class="chip p">Group 4</span><a class="li-go" href="#g4" data-go="g4">Open group →</a></div><b>Places, equipment, events</b><p class="ask">Where do people do sport, and what do they need for it?</p><input class="ans" id="li-g4" placeholder="word 1, word 2, …" aria-label="Group 4"><div class="li-foot"><span class="li-n">0</span><label><input type="checkbox" id="li-w4"> my weak group</label></div></div>
-      <div class="li-card"><div class="li-top"><span class="chip p">Group 5</span><a class="li-go" href="#g5" data-go="g5">Open group →</a></div><b>Physical &amp; mental benefits</b><p class="ask">Why is exercise good for the body — and the mind?</p><input class="ans" id="li-g5" placeholder="word 1, word 2, …" aria-label="Group 5"><div class="li-foot"><span class="li-n">0</span><label><input type="checkbox" id="li-w5"> my weak group</label></div></div>
-      <div class="li-card"><div class="li-top"><span class="chip p">Group 6</span><a class="li-go" href="#g6" data-go="g6">Open group →</a></div><b>Risks &amp; drawbacks</b><p class="ask">What can go wrong with sport and exercise?</p><input class="ans" id="li-g6" placeholder="word 1, word 2, …" aria-label="Group 6"><div class="li-foot"><span class="li-n">0</span><label><input type="checkbox" id="li-w6"> my weak group</label></div></div>
-      <div class="li-card"><div class="li-top"><span class="chip p">Group 7</span><a class="li-go" href="#g7" data-go="g7">Open group →</a></div><b>Frequency, habits &amp; training schedules</b><p class="ask">How often, and when, do you exercise?</p><input class="ans" id="li-g7" placeholder="word 1, word 2, …" aria-label="Group 7"><div class="li-foot"><span class="li-n">0</span><label><input type="checkbox" id="li-w7"> my weak group</label></div></div>
-      <div class="li-card"><div class="li-top"><span class="chip p">Group 8</span><a class="li-go" href="#g8" data-go="g8">Open group →</a></div><b>Attitudes &amp; evaluation</b><p class="ask">How do you feel about sport — and how do you say it?</p><input class="ans" id="li-g8" placeholder="word 1, word 2, …" aria-label="Group 8"><div class="li-foot"><span class="li-n">0</span><label><input type="checkbox" id="li-w8"> my weak group</label></div></div>
-      <div class="li-card"><div class="li-top"><span class="chip p">Group 9</span><a class="li-go" href="#g9" data-go="g9">Open group →</a></div><b>Ability &amp; achievement</b><p class="ask">How do people get better, win, or reach their goals?</p><input class="ans" id="li-g9" placeholder="word 1, word 2, …" aria-label="Group 9"><div class="li-foot"><span class="li-n">0</span><label><input type="checkbox" id="li-w9"> my weak group</label></div></div>
-      <div class="li-card"><div class="li-top"><span class="chip p">Group 10</span><a class="li-go" href="#g10" data-go="g10">Open group →</a></div><b>Society &amp; policy</b><p class="ask">What should governments, employers and hospitals do about exercise?</p><input class="ans" id="li-g10" placeholder="word 1, word 2, …" aria-label="Group 10"><div class="li-foot"><span class="li-n">0</span><label><input type="checkbox" id="li-w10"> my weak group</label></div></div>
+      <div class="li-card"><div class="li-top"><span class="chip p">Group 1</span><a class="li-go" href="#g1" data-go="g1">Open group →</a></div><b>Types of sport &amp; activity</b><p class="ask">What sports do you play, do or go?</p><input class="ans" id="li-g1" placeholder="word 1, word 2, …" aria-label="Group 1"><div class="li-foot"><span class="li-n">0</span></div></div>
+      <div class="li-card"><div class="li-top"><span class="chip p">Group 2</span><a class="li-go" href="#g2" data-go="g2">Open group →</a></div><b>Verbs &amp; phrasal verbs for training</b><p class="ask">What do you actually do in a training session?</p><input class="ans" id="li-g2" placeholder="word 1, word 2, …" aria-label="Group 2"><div class="li-foot"><span class="li-n">0</span></div></div>
+      <div class="li-card"><div class="li-top"><span class="chip p">Group 3</span><a class="li-go" href="#g3" data-go="g3">Open group →</a></div><b>People &amp; roles</b><p class="ask">Who is involved in a sport, on and off the pitch?</p><input class="ans" id="li-g3" placeholder="word 1, word 2, …" aria-label="Group 3"><div class="li-foot"><span class="li-n">0</span></div></div>
+      <div class="li-card"><div class="li-top"><span class="chip p">Group 4</span><a class="li-go" href="#g4" data-go="g4">Open group →</a></div><b>Places, equipment, events</b><p class="ask">Where do people do sport, and what do they need for it?</p><input class="ans" id="li-g4" placeholder="word 1, word 2, …" aria-label="Group 4"><div class="li-foot"><span class="li-n">0</span></div></div>
+      <div class="li-card"><div class="li-top"><span class="chip p">Group 5</span><a class="li-go" href="#g5" data-go="g5">Open group →</a></div><b>Physical &amp; mental benefits</b><p class="ask">Why is exercise good for the body — and the mind?</p><input class="ans" id="li-g5" placeholder="word 1, word 2, …" aria-label="Group 5"><div class="li-foot"><span class="li-n">0</span></div></div>
+      <div class="li-card"><div class="li-top"><span class="chip p">Group 6</span><a class="li-go" href="#g6" data-go="g6">Open group →</a></div><b>Risks &amp; drawbacks</b><p class="ask">What can go wrong with sport and exercise?</p><input class="ans" id="li-g6" placeholder="word 1, word 2, …" aria-label="Group 6"><div class="li-foot"><span class="li-n">0</span></div></div>
+      <div class="li-card"><div class="li-top"><span class="chip p">Group 7</span><a class="li-go" href="#g7" data-go="g7">Open group →</a></div><b>Frequency, habits &amp; training schedules</b><p class="ask">How often, and when, do you exercise?</p><input class="ans" id="li-g7" placeholder="word 1, word 2, …" aria-label="Group 7"><div class="li-foot"><span class="li-n">0</span></div></div>
+      <div class="li-card"><div class="li-top"><span class="chip p">Group 8</span><a class="li-go" href="#g8" data-go="g8">Open group →</a></div><b>Attitudes &amp; evaluation</b><p class="ask">How do you feel about sport — and how do you say it?</p><input class="ans" id="li-g8" placeholder="word 1, word 2, …" aria-label="Group 8"><div class="li-foot"><span class="li-n">0</span></div></div>
+      <div class="li-card"><div class="li-top"><span class="chip p">Group 9</span><a class="li-go" href="#g9" data-go="g9">Open group →</a></div><b>Ability &amp; achievement</b><p class="ask">How do people get better, win, or reach their goals?</p><input class="ans" id="li-g9" placeholder="word 1, word 2, …" aria-label="Group 9"><div class="li-foot"><span class="li-n">0</span></div></div>
+      <div class="li-card"><div class="li-top"><span class="chip p">Group 10</span><a class="li-go" href="#g10" data-go="g10">Open group →</a></div><b>Society &amp; policy</b><p class="ask">What should governments, employers and hospitals do about exercise?</p><input class="ans" id="li-g10" placeholder="word 1, word 2, …" aria-label="Group 10"><div class="li-foot"><span class="li-n">0</span></div></div>
     </div>
-    <div class="li-sum"><span><span class="n" id="li-sum-words">0</span>words so far</span><span><span class="n" id="li-sum-weak">0/3</span>weak groups chosen</span></div>
+    <div class="li-sum"><span><span class="n" id="li-sum-words">0</span>words so far</span></div>
     <div class="note info"><span class="tag">Bridge</span><p>This is your starting point. Go to <a href="#g1" data-go="g1">Sheet 3 · Vocabulary by group</a>, read your 3 weak groups first, then come back in 7 days and type again to see the numbers grow.</p></div>
   </section>
 </article>
@@ -1738,22 +1742,17 @@
   }));
   (function () {
     const cards = $$('.li-card'); if (!cards.length) return;
-    const sumW = $('#li-sum-words'), sumK = $('#li-sum-weak');
+    const sumW = $('#li-sum-words');
     const count = v => v.split(/[,;\n]+/).map(s => s.trim()).filter(Boolean).length;
     const update = () => {
-      let total = 0, weak = 0;
+      let total = 0;
       cards.forEach(c => {
-        const inp = $('input.ans', c), n = $('.li-n', c), cb = $('input[type=checkbox]', c);
+        const inp = $('input.ans', c), n = $('.li-n', c);
         const k = count(inp.value); total += k; n.textContent = k + ' words';
-        c.classList.toggle('weak', cb.checked); if (cb.checked) weak++;
       });
-      sumW.textContent = total; sumK.textContent = weak + '/3'; sumK.classList.toggle('full', weak === 3);
+      sumW.textContent = total;
     };
-    cards.forEach(c => {
-      $('input.ans', c).addEventListener('input', update);
-      const cb = $('input[type=checkbox]', c);
-      cb.addEventListener('change', () => { if (cb.checked && cards.filter(x => $('input[type=checkbox]', x).checked).length > 3) { cb.checked = false; store.del('b2:c:' + cb.id); } update(); });
-    });
+    cards.forEach(c => $('input.ans', c).addEventListener('input', update));
     update();
   })();
   let start = 0;
