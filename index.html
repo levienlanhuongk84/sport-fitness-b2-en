@@ -379,6 +379,11 @@
   .vt i { color: var(--ink-2); }
   .vt tr.cluster td { background: var(--surface-2); font-family: var(--font-cond); font-weight: 700; letter-spacing: .05em; text-transform: uppercase; font-size: .78em; color: var(--purple-ink); padding: 7px 14px; border-top: 1px solid var(--line-strong); }
   .vt tr.cluster:first-child td { border-top: 0; }
+  @media (max-width: 640px) {
+    .vt tr:not(.cluster) { display: flex; flex-direction: column; }
+    .vt tr:not(.cluster) td { display: block; width: 100% !important; border-top: 0; padding: 5px 14px; }
+    .vt tr:not(.cluster) td:first-child { padding-top: 10px; border-top: 1px solid var(--line); }
+  }
   .core-words { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px 10px; padding: 10px 14px; }
   .core-words > span { display: block; background: var(--surface-2); border-radius: 7px; padding: 6px 10px; line-height: 1.5; }
   @media (max-width: 640px) { .core-words { grid-template-columns: 1fr; } }
@@ -615,18 +620,18 @@
           <tr><td>racket sports</td><td>sports you play with a racket</td><td><i>Racket sports like badminton are hugely popular in Vietnam.</i></td></tr>
           <tr><td>water sports</td><td>sports done in or on water</td><td><i>Swimming and surfing are my favourite water sports.</i></td></tr>
           <tr><td>winter sports</td><td>sports done on snow or ice</td><td><i>Skiing and snowboarding are popular winter sports in Europe.</i></td></tr>
-          <tr><td>martial arts<span class="ipa">/ˌmɑːʃl ˈɑːts/</span></td><td>fighting sports such as karate or judo</td><td><i>He's been doing martial arts since he was six.</i></td></tr>
+          <tr><td>martial arts<wbr><span class="ipa">/ˌmɑːʃl ˈɑːts/</span></td><td>fighting sports such as karate or judo</td><td><i>He's been doing martial arts since he was six.</i></td></tr>
           <tr><td>combat sports</td><td>sports where two people fight each other</td><td><i>Boxing and wrestling are combat sports.</i></td></tr>
           <tr class="cluster"><td colspan="3">By risk level &amp; character</td></tr>
           <tr><td>extreme sports</td><td>exciting sports with a high risk of danger</td><td><i>Extreme sports are thrilling but carry a real risk of injury.</i></td></tr>
           <tr><td>adventure sports</td><td>exciting outdoor sports in wild places</td><td><i>Rock climbing is one of the most popular adventure sports.</i></td></tr>
-          <tr><td>endurance sports<span class="ipa">/ɪnˈdjʊərəns/</span></td><td>sports that last a very long time (marathon, triathlon)</td><td><i>Endurance sports test your stamina rather than your speed.</i></td></tr>
+          <tr><td>endurance sports<wbr><span class="ipa">/ɪnˈdjʊərəns/</span></td><td>sports that last a very long time (marathon, triathlon)</td><td><i>Endurance sports test your stamina rather than your speed.</i></td></tr>
           <tr><td>a contact sport</td><td>a sport where players touch or hit each other</td><td><i>Rugby is a contact sport, so injuries are common.</i></td></tr>
           <tr><td>a non‑contact sport</td><td>a sport with no physical contact between players</td><td><i>Badminton is a non‑contact sport, so it's safer for beginners.</i></td></tr>
-          <tr><td>a spectator sport<span class="ipa">/spekˈteɪtə/</span></td><td>a sport that many people watch</td><td><i>Football is the biggest spectator sport in the world.</i></td></tr>
+          <tr><td>a spectator sport<wbr><span class="ipa">/spekˈteɪtə/</span></td><td>a sport that many people watch</td><td><i>Football is the biggest spectator sport in the world.</i></td></tr>
           <tr class="cluster"><td colspan="3">Activities in general</td></tr>
-          <tr><td>recreational activities<span class="ipa">/ˌrekriˈeɪʃənl/</span></td><td>activities you do for fun and relaxation</td><td><i>Hiking is one of my favourite recreational activities.</i></td></tr>
-          <tr><td>outdoor pursuits<span class="ipa">/pəˈsjuːts/</span></td><td>activities you do outside, in nature</td><td><i>Camping and cycling are popular outdoor pursuits.</i></td></tr>
+          <tr><td>recreational activities<wbr><span class="ipa">/ˌrekriˈeɪʃənl/</span></td><td>activities you do for fun and relaxation</td><td><i>Hiking is one of my favourite recreational activities.</i></td></tr>
+          <tr><td>outdoor pursuits<wbr><span class="ipa">/pəˈsjuːts/</span></td><td>activities you do outside, in nature</td><td><i>Camping and cycling are popular outdoor pursuits.</i></td></tr>
           <tr><td>physical activity</td><td>any movement that uses your body</td><td><i>Any physical activity is better than none.</i></td></tr>
           <tr><td>exercise (U)</td><td>activity to keep your body healthy (uncountable)</td><td><i>I try to get some exercise every day.</i></td></tr>
           <tr><td>competitive</td><td>wanting very much to win</td><td><i>I'm quite competitive when I play tennis.</i></td></tr>
@@ -685,7 +690,7 @@
           <tr><td>do sit‑ups</td><td>exercise your stomach muscles lying down</td><td><i>He does a hundred sit‑ups every night.</i></td></tr>
           <tr><td>do press‑ups</td><td>push your body up and down with your arms</td><td><i>We did press‑ups during the warm‑up.</i></td></tr>
           <tr class="cluster"><td colspan="3">Effort &amp; goals</td></tr>
-          <tr><td>build up stamina<span class="ipa">/ˈstæmɪnə/</span></td><td>become able to exercise for longer</td><td><i>Start slowly and build up your stamina.</i></td></tr>
+          <tr><td>build up stamina<wbr><span class="ipa">/ˈstæmɪnə/</span></td><td>become able to exercise for longer</td><td><i>Start slowly and build up your stamina.</i></td></tr>
           <tr><td>build up strength</td><td>make your body stronger over time</td><td><i>Lifting weights helps build up strength.</i></td></tr>
           <tr><td>push yourself</td><td>make yourself work harder</td><td><i>You need to push yourself in the last kilometre.</i></td></tr>
           <tr><td>be out of breath</td><td>breathing fast after hard exercise</td><td><i>I was completely out of breath after 2 km.</i></td></tr>
@@ -716,15 +721,15 @@
       <div class="tier adv"><div class="tier-h">Advanced · B2</div>
         <table class="vt"><tbody>
           <tr class="cluster"><td colspan="3">Level &amp; coaching</td></tr>
-          <tr><td>amateur<span class="ipa">/ˈæmətə/</span></td><td>doing a sport for pleasure, not money</td><td><i>He plays at amateur level.</i></td></tr>
+          <tr><td>amateur<wbr><span class="ipa">/ˈæmətə/</span></td><td>doing a sport for pleasure, not money</td><td><i>He plays at amateur level.</i></td></tr>
           <tr><td>professional</td><td>doing a sport as a paid job</td><td><i>She turned professional at eighteen.</i></td></tr>
           <tr><td>coach</td><td>person who trains a team or player</td><td><i>A good coach pushes you without injuring you.</i></td></tr>
           <tr><td>trainer</td><td>person who helps you exercise at the gym</td><td><i>My trainer designed a new programme for me.</i></td></tr>
           <tr><td>personal trainer</td><td>a trainer you pay to work with you alone</td><td><i>I hired a personal trainer to prepare for the race.</i></td></tr>
           <tr class="cluster"><td colspan="3">Officials &amp; opponents</td></tr>
-          <tr><td>referee<span class="ipa">/ˌrefəˈriː/</span> (football)</td><td>official who controls a football match</td><td><i>The referee gave a penalty.</i></td></tr>
-          <tr><td>umpire<span class="ipa">/ˈʌmpaɪə/</span> (tennis)</td><td>official who controls a tennis match</td><td><i>The umpire called the ball out.</i></td></tr>
-          <tr><td>opponent<span class="ipa">/əˈpəʊnənt/</span></td><td>the person you play against</td><td><i>My opponent was much taller than me.</i></td></tr>
+          <tr><td>referee<wbr><span class="ipa">/ˌrefəˈriː/</span> (football)</td><td>official who controls a football match</td><td><i>The referee gave a penalty.</i></td></tr>
+          <tr><td>umpire<wbr><span class="ipa">/ˈʌmpaɪə/</span> (tennis)</td><td>official who controls a tennis match</td><td><i>The umpire called the ball out.</i></td></tr>
+          <tr><td>opponent<wbr><span class="ipa">/əˈpəʊnənt/</span></td><td>the person you play against</td><td><i>My opponent was much taller than me.</i></td></tr>
           <tr><td>rival</td><td>someone you compete against over a long time</td><td><i>She beat her main rival in the final.</i></td></tr>
           <tr><td>competitor</td><td>a person taking part in a competition</td><td><i>There were fifty competitors in the race.</i></td></tr>
           <tr class="cluster"><td colspan="3">Teammates &amp; audience</td></tr>
@@ -737,10 +742,10 @@
           <tr><td>sponsor</td><td>a company that pays money to support a team</td><td><i>A major bank sponsors the national team.</i></td></tr>
           <tr><td>role model</td><td>a person others admire and copy</td><td><i>Athletes are role models for young people.</i></td></tr>
           <tr class="cluster"><td colspan="3">Experts &amp; levels of interest</td></tr>
-          <tr><td>physiotherapist<span class="ipa">/ˌfɪziəʊˈθerəpɪst/</span> (physio)</td><td>a specialist who treats injuries with exercise and massage</td><td><i>The physio got him back on the pitch in two weeks.</i></td></tr>
+          <tr><td>physiotherapist<wbr><span class="ipa">/ˌfɪziəʊˈθerəpɪst/</span> (physio)</td><td>a specialist who treats injuries with exercise and massage</td><td><i>The physio got him back on the pitch in two weeks.</i></td></tr>
           <tr><td>sports doctor</td><td>a doctor who treats athletes</td><td><i>A sports doctor examined his injured knee.</i></td></tr>
           <tr><td>a keen runner</td><td>someone who enjoys running very much</td><td><i>My father is a keen cyclist.</i></td></tr>
-          <tr><td>an avid<span class="ipa">/ˈævɪd/</span> runner</td><td>someone who runs with great enthusiasm</td><td><i>She's an avid runner who never misses a day.</i></td></tr>
+          <tr><td>an avid<wbr><span class="ipa">/ˈævɪd/</span> runner</td><td>someone who runs with great enthusiasm</td><td><i>She's an avid runner who never misses a day.</i></td></tr>
           <tr><td>a couch potato <i>(informal)</i></td><td>a person who sits a lot and does little exercise</td><td><i>I used to be a real couch potato.</i></td></tr>
         </tbody></table></div>
       <div class="tier col"><div class="tier-h">Collocations</div>
@@ -829,16 +834,16 @@
         <table class="vt"><tbody>
           <tr class="cluster"><td colspan="3">Exercise intensity</td></tr>
           <tr><td>regular exercise</td><td>exercise done often, at fixed times</td><td><i>Regular exercise is one of the best things you can do for your health.</i></td></tr>
-          <tr><td>moderate exercise<span class="ipa">/ˈmɒdərət/</span></td><td>exercise that is not too hard</td><td><i>Doctors recommend moderate exercise most days.</i></td></tr>
-          <tr><td>vigorous exercise<span class="ipa">/ˈvɪɡərəs/</span></td><td>very hard, intense exercise</td><td><i>Vigorous exercise burns more calories in less time.</i></td></tr>
+          <tr><td>moderate exercise<wbr><span class="ipa">/ˈmɒdərət/</span></td><td>exercise that is not too hard</td><td><i>Doctors recommend moderate exercise most days.</i></td></tr>
+          <tr><td>vigorous exercise<wbr><span class="ipa">/ˈvɪɡərəs/</span></td><td>very hard, intense exercise</td><td><i>Vigorous exercise burns more calories in less time.</i></td></tr>
           <tr><td>aerobic exercise</td><td>exercise that makes your heart and lungs work harder</td><td><i>Aerobic exercise like swimming is great for the heart.</i></td></tr>
-          <tr><td>cardiovascular fitness<span class="ipa">/ˌkɑːdiəʊˈvæskjələ/</span></td><td>how well your heart and blood vessels work</td><td><i>Swimming improves cardiovascular fitness.</i></td></tr>
+          <tr><td>cardiovascular fitness<wbr><span class="ipa">/ˌkɑːdiəʊˈvæskjələ/</span></td><td>how well your heart and blood vessels work</td><td><i>Swimming improves cardiovascular fitness.</i></td></tr>
           <tr class="cluster"><td colspan="3">Heart &amp; weight benefits</td></tr>
           <tr><td>lower blood pressure</td><td>make the pressure in your blood vessels go down</td><td><i>A daily walk can lower blood pressure.</i></td></tr>
           <tr><td>improve heart health</td><td>make your heart healthier</td><td><i>Cycling regularly improves heart health.</i></td></tr>
           <tr><td>reduce the risk of heart disease</td><td>make heart problems less likely</td><td><i>Exercise reduces the risk of heart disease.</i></td></tr>
           <tr><td>reduce the risk of type 2 diabetes</td><td>make type 2 diabetes less likely</td><td><i>Losing weight reduces the risk of type 2 diabetes.</i></td></tr>
-          <tr><td>reduce the risk of obesity<span class="ipa">/əʊˈbiːsəti/</span></td><td>make it less likely to become very overweight</td><td><i>Staying active reduces the risk of obesity in children.</i></td></tr>
+          <tr><td>reduce the risk of obesity<wbr><span class="ipa">/əʊˈbiːsəti/</span></td><td>make it less likely to become very overweight</td><td><i>Staying active reduces the risk of obesity in children.</i></td></tr>
           <tr><td>control weight</td><td>keep your weight at a healthy level</td><td><i>Exercise helps you control your weight.</i></td></tr>
           <tr><td>burn calories</td><td>use up energy from food</td><td><i>Cycling burns a lot of calories.</i></td></tr>
           <tr><td>lose weight</td><td>become lighter and thinner</td><td><i>She started running to lose weight.</i></td></tr>
@@ -851,7 +856,7 @@
           <tr class="cluster"><td colspan="3">Mind &amp; emotions</td></tr>
           <tr><td>relieve stress</td><td>make you feel less worried and tense</td><td><i>Swimming really helps me relieve stress.</i></td></tr>
           <tr><td>reduce stress</td><td>make stress lower or smaller</td><td><i>Regular exercise can reduce stress at work.</i></td></tr>
-          <tr><td>release endorphins<span class="ipa">/ˈendɔːfɪnz/</span></td><td>produce chemicals in the brain that make you feel good</td><td><i>Exercise releases endorphins, which improve mood.</i></td></tr>
+          <tr><td>release endorphins<wbr><span class="ipa">/ˈendɔːfɪnz/</span></td><td>produce chemicals in the brain that make you feel good</td><td><i>Exercise releases endorphins, which improve mood.</i></td></tr>
           <tr><td>mental well‑being</td><td>feeling happy and healthy in your mind</td><td><i>Sport does wonders for mental well‑being.</i></td></tr>
           <tr><td>improve mood</td><td>make you feel happier</td><td><i>A short run always improves my mood.</i></td></tr>
           <tr><td>take your mind off work</td><td>help you stop thinking about work</td><td><i>Playing badminton takes my mind off work.</i></td></tr>
@@ -861,9 +866,9 @@
           <tr><td>develop teamwork</td><td>learn to work well with other people</td><td><i>Team sports develop teamwork.</i></td></tr>
           <tr><td>develop discipline</td><td>learn to control your behaviour and keep going</td><td><i>Martial arts develop discipline.</i></td></tr>
           <tr><td>develop leadership</td><td>learn to lead and guide other people</td><td><i>Being team captain develops leadership skills.</i></td></tr>
-          <tr><td>prevent chronic disease<span class="ipa">/ˈkrɒnɪk/</span></td><td>stop long-lasting illnesses from starting</td><td><i>Regular exercise helps prevent chronic disease.</i></td></tr>
+          <tr><td>prevent chronic disease<wbr><span class="ipa">/ˈkrɒnɪk/</span></td><td>stop long-lasting illnesses from starting</td><td><i>Regular exercise helps prevent chronic disease.</i></td></tr>
           <tr><td>prolong life expectancy</td><td>help people live longer</td><td><i>Active people tend to have a longer life expectancy.</i></td></tr>
-          <tr><td>a sedentary lifestyle<span class="ipa">/ˈsedntri/</span></td><td>a lifestyle with much sitting and little exercise</td><td><i>A sedentary lifestyle is a major risk factor.</i></td></tr>
+          <tr><td>a sedentary lifestyle<wbr><span class="ipa">/ˈsedntri/</span></td><td>a lifestyle with much sitting and little exercise</td><td><i>A sedentary lifestyle is a major risk factor.</i></td></tr>
           <tr><td>physical inactivity</td><td>not doing enough exercise</td><td><i>Physical inactivity is linked to many chronic diseases.</i></td></tr>
         </tbody></table></div>
       <div class="tier col"><div class="tier-h">Collocations</div>
@@ -889,7 +894,7 @@
       <div class="tier adv"><div class="tier-h">Advanced · B2</div>
         <table class="vt"><tbody>
           <tr class="cluster"><td colspan="3">Injuries</td></tr>
-          <tr><td>injury<span class="ipa">/ˈɪndʒəri/</span></td><td>physical harm to a part of the body</td><td><i>A knee injury can take months to heal.</i></td></tr>
+          <tr><td>injury<wbr><span class="ipa">/ˈɪndʒəri/</span></td><td>physical harm to a part of the body</td><td><i>A knee injury can take months to heal.</i></td></tr>
           <tr><td>get an injury</td><td>become hurt while doing sport</td><td><i>He got an injury during the warm‑up.</i></td></tr>
           <tr><td>suffer an injury</td><td>be hurt, often quite badly</td><td><i>She suffered a serious injury last season.</i></td></tr>
           <tr><td>pick up an injury</td><td>get hurt, often slightly, in a game or training</td><td><i>He picked up a knee injury in training.</i></td></tr>
@@ -918,10 +923,10 @@
           <tr><td>cheating</td><td>breaking the rules to win unfairly</td><td><i>Cheating damages the spirit of the sport.</i></td></tr>
           <tr><td>doping</td><td>using banned drugs to perform better</td><td><i>The athlete failed a doping test.</i></td></tr>
           <tr><td>performance‑enhancing drugs</td><td>banned drugs that make athletes stronger or faster</td><td><i>Performance‑enhancing drugs are banned in professional sport.</i></td></tr>
-          <tr><td>commercialisation<span class="ipa">/kəˌmɜːʃəlaɪˈzeɪʃn/</span></td><td>running sport mainly to make money</td><td><i>Commercialisation has changed football.</i></td></tr>
+          <tr><td>commercialisation<wbr><span class="ipa">/kəˌmɜːʃəlaɪˈzeɪʃn/</span></td><td>running sport mainly to make money</td><td><i>Commercialisation has changed football.</i></td></tr>
           <tr><td>sponsorship deals</td><td>contracts where companies pay to support a team or event</td><td><i>Top clubs sign huge sponsorship deals.</i></td></tr>
           <tr><td>aggressive behaviour</td><td>angry, violent actions towards others</td><td><i>The referee punished his aggressive behaviour.</i></td></tr>
-          <tr><td>hooliganism<span class="ipa">/ˈhuːlɪɡənɪzəm/</span></td><td>violent behaviour by fans at matches</td><td><i>Hooliganism is rare at Vietnamese matches.</i></td></tr>
+          <tr><td>hooliganism<wbr><span class="ipa">/ˈhuːlɪɡənɪzəm/</span></td><td>violent behaviour by fans at matches</td><td><i>Hooliganism is rare at Vietnamese matches.</i></td></tr>
           <tr><td>the downside of</td><td>the disadvantage or negative part of</td><td><i>The downside of professional sport is the pressure.</i></td></tr>
           <tr><td>the drawback of</td><td>the problem or weak point of</td><td><i>The main drawback is the cost.</i></td></tr>
         </tbody></table></div>
@@ -998,14 +1003,14 @@
           <tr><td>worthwhile</td><td>worth the time and effort</td><td><i>Early morning training is worthwhile in the long run.</i></td></tr>
           <tr><td>challenging</td><td>difficult in an interesting way</td><td><i>Rock climbing is challenging but rewarding.</i></td></tr>
           <tr><td>demanding</td><td>needing a lot of effort or skill</td><td><i>It's a physically demanding sport.</i></td></tr>
-          <tr><td>gruelling<span class="ipa">/ˈɡruːəlɪŋ/</span></td><td>extremely tiring and difficult</td><td><i>A marathon is gruelling but worth it.</i></td></tr>
+          <tr><td>gruelling<wbr><span class="ipa">/ˈɡruːəlɪŋ/</span></td><td>extremely tiring and difficult</td><td><i>A marathon is gruelling but worth it.</i></td></tr>
           <tr><td>exhausting</td><td>making you very tired</td><td><i>The training session was exhausting.</i></td></tr>
           <tr><td>thrilling</td><td>very exciting and full of tension</td><td><i>The final match was absolutely thrilling.</i></td></tr>
           <tr><td>addictive</td><td>hard to stop doing once you start</td><td><i>Running can become surprisingly addictive.</i></td></tr>
-          <tr><td>exhilarating<span class="ipa">/ɪɡˈzɪləreɪtɪŋ/</span></td><td>making you feel very happy and full of energy</td><td><i>Skiing down the mountain was exhilarating.</i></td></tr>
+          <tr><td>exhilarating<wbr><span class="ipa">/ɪɡˈzɪləreɪtɪŋ/</span></td><td>making you feel very happy and full of energy</td><td><i>Skiing down the mountain was exhilarating.</i></td></tr>
           <tr class="cluster"><td colspan="3">Relaxing &amp; negative</td></tr>
           <tr><td>relaxing</td><td>helping you feel calm and rested</td><td><i>A gentle swim is very relaxing.</i></td></tr>
-          <tr><td>therapeutic<span class="ipa">/ˌθerəˈpjuːtɪk/</span></td><td>good for your body or mind, like a treatment</td><td><i>Swimming is almost therapeutic after a shift.</i></td></tr>
+          <tr><td>therapeutic<wbr><span class="ipa">/ˌθerəˈpjuːtɪk/</span></td><td>good for your body or mind, like a treatment</td><td><i>Swimming is almost therapeutic after a shift.</i></td></tr>
           <tr><td>sociable</td><td>good for meeting and talking to people</td><td><i>Badminton is a sociable way to stay active.</i></td></tr>
           <tr><td>tedious</td><td>boring and going on too long</td><td><i>I find long‑distance running a bit tedious.</i></td></tr>
           <tr><td>overrated</td><td>not as good as people say it is</td><td><i>Some people think golf is overrated.</i></td></tr>
@@ -1096,7 +1101,7 @@
           <tr><td>free access to</td><td>the right to use something without paying</td><td><i>Free access to public pools would help many families.</i></td></tr>
           <tr><td>affordable access to</td><td>being able to use something at a low price</td><td><i>Affordable access is the biggest barrier for many people.</i></td></tr>
           <tr><td>sports facilities</td><td>buildings and places where people do sport</td><td><i>The city needs more sports facilities.</i></td></tr>
-          <tr><td>compulsory PE<span class="ipa">/kəmˈpʌlsəri/</span> (physical education)</td><td>sport lessons that all students must attend</td><td><i>PE should be compulsory up to the age of eighteen.</i></td></tr>
+          <tr><td>compulsory PE<wbr><span class="ipa">/kəmˈpʌlsəri/</span> (physical education)</td><td>sport lessons that all students must attend</td><td><i>PE should be compulsory up to the age of eighteen.</i></td></tr>
           <tr class="cluster"><td colspan="3">Encouraging the community</td></tr>
           <tr><td>encourage people to</td><td>give people reasons and support to do something</td><td><i>Doctors can encourage people to exercise more.</i></td></tr>
           <tr><td>motivate people to</td><td>make people want to do something</td><td><i>The campaign aims to motivate people to walk more.</i></td></tr>
@@ -1104,11 +1109,11 @@
           <tr><td>host major sporting events</td><td>organise big competitions in your country or city</td><td><i>Vietnam has hosted several major sporting events.</i></td></tr>
           <tr><td>national pride</td><td>a feeling of being proud of your country</td><td><i>Winning the tournament brought huge national pride.</i></td></tr>
           <tr><td>boost tourism</td><td>bring more visitors to a place</td><td><i>Major events boost tourism significantly.</i></td></tr>
-          <tr><td>generate revenue<span class="ipa">/ˈrevənjuː/</span></td><td>bring in money, produce income</td><td><i>Hosting the SEA Games generated revenue but cost taxpayers a lot.</i></td></tr>
+          <tr><td>generate revenue<wbr><span class="ipa">/ˈrevənjuː/</span></td><td>bring in money, produce income</td><td><i>Hosting the SEA Games generated revenue but cost taxpayers a lot.</i></td></tr>
           <tr class="cluster"><td colspan="3">Resources &amp; modern lifestyles</td></tr>
           <tr><td>cost taxpayers</td><td>be paid for with public money</td><td><i>The new stadium cost taxpayers a great deal.</i></td></tr>
           <tr><td>allocate resources</td><td>decide where money and people should be used</td><td><i>The government must allocate resources carefully.</i></td></tr>
-          <tr><td>prioritise<span class="ipa">/praɪˈɒrətaɪz/</span></td><td>treat something as the most important</td><td><i>Governments should prioritise grassroots sport.</i></td></tr>
+          <tr><td>prioritise<wbr><span class="ipa">/praɪˈɒrətaɪz/</span></td><td>treat something as the most important</td><td><i>Governments should prioritise grassroots sport.</i></td></tr>
           <tr><td>sedentary jobs</td><td>jobs where you sit for most of the day</td><td><i>Sedentary jobs are becoming more common.</i></td></tr>
           <tr><td>screen time</td><td>time spent on phones, TVs or computers</td><td><i>Screen time has replaced outdoor play.</i></td></tr>
           <tr><td>modern lifestyles</td><td>the way people live today</td><td><i>Modern lifestyles leave little room for exercise.</i></td></tr>
